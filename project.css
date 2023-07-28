@@ -1125,6 +1125,7 @@ section
     left: 1350px;
     margin-top: 200px;
     position: fixed;
+    index: -1;
 }
 
 .go-up p
