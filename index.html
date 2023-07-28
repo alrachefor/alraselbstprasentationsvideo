@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d0599.js"></script>
+    <link rel="stylesheet" href="sidebar_menu.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <img src="bars3.jpg" id="btn"> 
+        <img src="crois1.jpg" id="cancel">
+    </label>
+
+    <div class="sidebar">
+        <header> Mein App </header>
+        <ul>
+            <li><a href="#"><i class="fas fa-qrcode"></i>Armaturenbrett</a></li>
+            <li><a href="#"><i class="fas fa-link"></i>Abkürzungen</a></li>
+            <li><a href="#"><i class="fas fa-stream"></i>Präsentation</a></li>
+            <li><a href="#"><i class="fas fa-calendar-week"></i>Veranstaltungen</a></li>
+            <li><a href="#"><i class="far fa-question-circle"></i>Diensleistungn</a></li>
+        </ul>
+    </div>
+
+    <section>
+        <div class="navbar">
+            <img src="alramarkey8.jpg" class="logo">
+            <ul>
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="portfolio.html"> Portfolio </a></li>
+                <li><a href="login.html"> Login </a></li>
+                <li><a href="contact_us.html"> Kontakt </a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <span class="text first-text"> Willkommen  </span>
+            <span class="text sec-text"></span>
+
+            <script>
+                const text = document.querySelector(".sec-text");
+
+                const textload = () => 
+                {
+                    setTimeout(() => { text.textContent = "Damen";}, 0);
+                    setTimeout(() => { text.textContent = "Herren";}, 4000);
+                }
+                textload();
+                setInterval(textload, 8000);
+            </script>
+
+            <div class="title">
+                Hier sind mein 
+                <div class="slider">
+                    <div> CV </div>
+                    <div> Portfolio </div>
+                    <div> Präsntationvideo </div>
+                </div> 
+            </div>
+            <p class="video"> 
+                Klicken Sie auf diesen Link, um zu meinem <a href="portfolio.html"> Präsentationsvideo </a> zu gelangen.
+            </p>
+                <button type="button" class="information"> <a href="portfolio.html"> Klicken Sie hier für weitere Informationen</a> </button>
+        </div>
+    </section>
+</body>
+</html>
